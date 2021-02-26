@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">8</td><td class="numi">8</td><td class="numi_attn">5</td><td class="numi_attn">2</td><td class="numi">23.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.hrms.tests.OrangeHRM_LoginTests</td><td><a href="#m1"><b>beforeMethod</b>  </a></td><td class="numi">1</td><td>1614219060776</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.hrms.tests.loginTest</td><td><a href="#m2"><b>setup</b>  </a></td><td class="numi">1</td><td>1614219060753</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.hrms.tests.Testing_listenersSample</td><td><a href="#m3"><b>OpenBrowser</b>  </a></td><td class="numi">1</td><td>1614219060748</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.hrms.tests.NationalityTestCase</td><td><a href="#m4"><b>test</b>  </a></td><td class="numi">1</td><td>1614219044283</td><td class="numi">13081</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.hrms.tests.OrangeHRM_LoginTests</td><td><a href="#m5"><b>beforeMethod</b>  </a></td><td class="numi">2</td><td>1614219060795</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.hrms.tests.OrangeHRM_LoginTests</td><td><a href="#m6"><b>Login_validUsername_InvalidPassword</b> (login) ("logging in w/valid username and invalid password")</a></td><td class="numi">1</td><td>1614219060795</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.hrms.tests.Testing_listenersSample</td><td><a href="#m7"><b>SkipTest</b>  </a></td><td class="numi">1</td><td>1614219060751</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.hrms.tests.OrangeHRM_LoginTests</td><td><a href="#m8"><b>logReportedTesting</b>  </a></td><td class="numi">1</td><td>1614219060795</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.hrms.tests.loginTest</td><td><a href="#m9"><b>loginTest1</b>  </a></td><td class="numi">1</td><td>1614219060775</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.hrms.tests.OrangeHRM_LoginTests</td><td><a href="#m10"><b>test1</b> (login) </a></td><td class="numi">1</td><td>1614219060796</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">com.hrms.tests.Testing_listenersSample</td><td><a href="#m11"><b>AccountTest</b>  </a></td><td class="numi">3</td><td>1614219057383</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m12"><b>AccountTest</b>  </a></td><td class="numi">3</td><td>1614219057383</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m13"><b>AccountTest</b>  </a></td><td class="numi">3</td><td>1614219057383</td><td class="numi">2</td></tr><tr class="passedodd"><td><a href="#m14"><b>CloseBrowser</b>  </a></td><td class="numi">1</td><td>1614219057385</td><td class="numi">3363</td></tr>
+<tr class="passedeven"><td rowspan="2">com.hrms.tests.testNg_dataProviderTest</td><td><a href="#m15"><b>myTest</b>  </a></td><td class="numi">2</td><td>1614219057379</td><td class="numi">2</td></tr><tr class="passedeven"><td><a href="#m16"><b>myTest</b>  </a></td><td class="numi">2</td><td>1614219057379</td><td class="numi">2</td></tr>
+<tr class="passedodd"><td rowspan="2">com.hrms.tests.TestingAnnotations</td><td><a href="#m17"><b>testCase1</b>  </a></td><td class="numi">1</td><td>1614219060797</td><td class="numi">1</td></tr><tr class="passedodd"><td><a href="#m18"><b>testCase2</b>  </a></td><td class="numi">1</td><td>1614219060801</td><td class="numi">1</td></tr>
+</table>
+<h1>Surefire test</h1>
+<h2 id="m1">com.hrms.tests.loginTest:setup</h2>
+<div style="padding-left:3em">
+<p>invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Samuels-MBP.fios-router.home&apos;, ip: &apos;fe80:0:0:0:8ad:abbe:5187:1a54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.2.1&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/w5/1jh0cndd1qn...}, goog:chromeOptions: {debuggerAddress: localhost:51732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54c43d02acc484ecd9c105b58710c573</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at com.hrms.tests.loginTest.setup(loginTest.java:23)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.hrms.tests.OrangeHRM_LoginTests:beforeMethod</h2>
+<div style="padding-left:3em">
+<p>invalid session id
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Samuels-MBP.fios-router.home&apos;, ip: &apos;fe80:0:0:0:8ad:abbe:5187:1a54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.2.1&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/w5/1jh0cndd1qn...}, goog:chromeOptions: {debuggerAddress: localhost:51732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54c43d02acc484ecd9c105b58710c573</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at com.hrms.tests.OrangeHRM_LoginTests.beforeMethod(OrangeHRM_LoginTests.java:23)
+<br/>32 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.hrms.tests.NationalityTestCase:test</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnAdd&quot;}
+  (Session info: chrome=88.0.4324.192)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Samuels-MBP.fios-router.home&apos;, ip: &apos;fe80:0:0:0:8ad:abbe:5187:1a54%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.2.1&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.192, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: /var/folders/w5/1jh0cndd1qn...}, goog:chromeOptions: {debuggerAddress: localhost:51732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 54c43d02acc484ecd9c105b58710c573
+*** Element info: {Using=id, value=btnAdd}</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:188)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy18.click(Unknown Source)
+<br/>at com.hrms.tests.NationalityTestCase.test(NationalityTestCase.java:38)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.hrms.tests.Testing_listenersSample:OpenBrowser</h2>
+<div style="padding-left:3em">
+<p>Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null</p>
+com.hrms.tests.Testing_listenersSample.OpenBrowser(Testing_listenersSample.java:32)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.hrms.tests.OrangeHRM_LoginTests:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.hrms.tests.OrangeHRM_LoginTests:beforeMethod</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.hrms.tests.OrangeHRM_LoginTests:test1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.hrms.tests.Testing_listenersSample:SkipTest</h2>
+<div style="padding-left:3em">
+<p>Skipping The Test Method </p>
+com.hrms.tests.Testing_listenersSample.SkipTest(Testing_listenersSample.java:49)
+<br/>30 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.hrms.tests.loginTest:loginTest1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.hrms.tests.OrangeHRM_LoginTests:Login_validUsername_InvalidPassword</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.hrms.tests.OrangeHRM_LoginTests:logReportedTesting</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.hrms.tests.Testing_listenersSample:CloseBrowser</h2>
+<div style="padding-left:3em">
+Driver Closed After Testing<br/>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.hrms.tests.Testing_listenersSample:AccountTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.hrms.tests.testNg_dataProviderTest:myTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Park</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.hrms.tests.testNg_dataProviderTest:myTest</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>Kanin</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.hrms.tests.Testing_listenersSample:AccountTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.hrms.tests.TestingAnnotations:testCase2</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.hrms.tests.TestingAnnotations:testCase1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.hrms.tests.Testing_listenersSample:AccountTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

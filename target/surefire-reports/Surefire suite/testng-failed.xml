@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.hrms.tests.Testing_listenersSample">
+        <methods>
+          <include name="SkipTest"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- com.hrms.tests.Testing_listenersSample -->
+      <class name="com.hrms.tests.NationalityTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.hrms.tests.NationalityTestCase -->
+      <class name="com.hrms.tests.OrangeHRM_LoginTests">
+        <methods>
+          <include name="Login_validUsername_InvalidPassword"/>
+          <include name="beforeMethod"/>
+          <include name="logReportedTesting"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.hrms.tests.OrangeHRM_LoginTests -->
+      <class name="com.hrms.tests.loginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="loginTest1"/>
+        </methods>
+      </class> <!-- com.hrms.tests.loginTest -->
+      <class name="com.hrms.tests.TestingAnnotations">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.hrms.tests.TestingAnnotations -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
